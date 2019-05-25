@@ -1,0 +1,144 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0
+  }
+
+  .launcher-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    background-color: blue;
+    overflow: hidden;
+  }
+
+  .launcher-sidebar {
+    background-color: #533A71;
+    color: white;
+    width: 90px;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .content-iframe {
+    flex-grow: 1;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+
+  .content-iframe-active {
+    display: block;
+  }
+
+  a {
+    color: white !important;
+  }
+
+  .btn-outline {
+    color: white;
+    border-color: white;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .btn-active {
+    font-weight: 700;
+    border: 2px solid;
+  }
+
+  .btn:hover {
+    color: white !important;
+  }
+
+  .launcher-sidebar i {
+    font-size: 2em;
+    /* */
+  }
+
+  .launcher-sidebar i.fa-minus-square {
+    display: block;
+  }
+
+  .launcher-sidebar i.fa-expand {
+    display: none;
+  }
+
+  .launcher-small {
+    width: 36px;
+    padding: 5px;
+  }
+
+  .launcher-small span {
+    display: none;
+  }
+
+  .launcher-small i {
+    font-size: 0.6em !important;
+    /* */
+  }
+
+  .launcher-small i.fa-minus-square {
+    display: none;
+  }
+
+  .launcher-small i.fa-expand {
+    display: block;
+  }
+</style>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+<body>
+  <div class="launcher-container">
+    <div class="launcher-sidebar" id="launcher-sidebar">
+      <div class="resizer" style="margin-bottom: 25px">
+        <i class="fas fa-minus-square"></i>
+        <i class="fas fa-expand"></i>
+      </div>
+
+      <button type="button" class="btn btn-outline btn-active" data-toggle="iframe-edit">
+        <i class="fas fa-edit"></i>
+        <span class="label">Editor</span>
+      </button>
+
+      <br />
+
+      <button type="button" class="btn btn-outline" data-toggle="iframe-terminal">
+        <i class="fas fa-terminal"></i>
+        <span class="label">Terminal</span>
+      </button>
+
+      <br />
+
+      <button type="button" class="btn btn-outline" data-toggle="iframe-db">
+        <i class="fas fa-database"></i>
+        <span class="label">Database</span>
+      </button>
+
+      <br />
+
+      <button type="button" class="btn btn-outline" data-toggle="iframe-deploy">
+          <i class="fas fa-rocket"></i>
+          <span class="label">Deploy</span>
+        </button>
+    </div>
+
+
+    <!-- apps go here -->
+    <iframe src="./sample1.html" class="content-iframe content-iframe-active" id="iframe-edit"></iframe>
+    <iframe src="about:blank" data-src="./sample2.html" class="content-iframe" id="iframe-terminal"></iframe>
+    <iframe src="about:blank" data-src="./sample3.html" class="content-iframe" id="iframe-db"></iframe>
+    <iframe src="about:blank" data-src="./sample2.html" class="content-iframe" id="iframe-deploy"></iframe>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./launcher.js"></script>
+</body>
