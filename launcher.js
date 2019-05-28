@@ -19,6 +19,7 @@ $(function(){
 
     $('body').on('click touchend', 'div.resizer', function(e) {
         let that = $('div.launcher-sidebar');
+        $( 'img.side_bar_logo_img' ).toggleClass( 'side_bar_logo_img_small' )
         if (that.hasClass('launcher-small')) {
             that.removeClass('launcher-small');
         } else {
