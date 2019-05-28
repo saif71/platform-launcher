@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,93 +19,138 @@
     <!-- Styles -->
     <link href="./app.css" rel="stylesheet">
 </head>
+
 <body>
-    <div id="app">
+    <!-- <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="http://localhost:6102">
                     FlexPassport
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+                    <!-- <ul class="navbar-nav mr-auto">
 
-                    </ul>
+                    </ul> -->
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
+                    <!-- <ul class="navbar-nav ml-auto"> -->
                         <!-- Authentication Links -->
-                                                    <li class="nav-item">
-                                <a class="nav-link" href="http://localhost:6102/login">Login</a>
-                            </li>
-                                                            <li class="nav-item">
-                                    <a class="nav-link" href="http://localhost:6102/register">Register</a>
-                                </li>
-                                                                        </ul>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="http://localhost:6102/login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost:6102/register">Register</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </nav>
+        </nav> -->
 
-        <main class="py-4">
+        <main class="py-5">
             <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Login</div>
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <div class="card">
+                            <div class="card-header">Login</div>
 
-                <div class="card-body">
-                    <form method="POST" action="http://localhost:6102/login">
-                        <input type="hidden" name="_token" value="bWLRxCAPsjFqyXkZJLhWMoTfUmFmGPS7YJGsaomk">
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+                            <div class="card-body">
+                                <form method="POST" action="http://localhost:6102/login">
+                                    <input type="hidden" name="_token" value="bWLRxCAPsjFqyXkZJLhWMoTfUmFmGPS7YJGsaomk">
+                                    <div class="form-group row">
+                                        <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail
+                                            Address</label>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control " name="email" value="" required autocomplete="email" autofocus>
+                                        <div class="col-md-8">
+                                            <input id="email" type="email" class="form-control " name="email" value=""
+                                                required autocomplete="email" autofocus>
 
-                                                            </div>
-                        </div>
+                                        </div>
+                                    </div>
 
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                                    <div class="form-group row">
+                                        <label for="password"
+                                            class="col-md-4 col-form-label text-md-right">Password</label>
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control " name="password" required autocomplete="current-password">
+                                        <div class="col-md-8">
+                                            <input id="password" type="password" class="form-control " name="password"
+                                                required autocomplete="current-password">
 
-                                                            </div>
-                        </div>
+                                        </div>
+                                    </div>
 
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" >
+                                    <div class="form-group row">
+                                        <div class="col-md-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="remember"
+                                                    id="remember">
 
-                                    <label class="form-check-label" for="remember">
-                                        Remember Me
-                                    </label>
-                                </div>
+                                                <label class="form-check-label" for="remember">
+                                                    Remember Me
+                                                </label>
+                                            </div>
+                                            <div class="forget_pass"><a href="#"><u>Forget Password?</u></a></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row mb-0">
+                                        <div class="col-md-8 offset-md-4">
+                                            <button type="submit" class="btn btn-primary form-control">
+                                                Login
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Login
-                                </button>
-
-                                                            </div>
+                        <div class="sign-up-link">
+                            <a href="#">Create a new account</a>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
         </main>
     </div>
+    <style>
+    html, body {
+    height: 100%;
+    }
+    body{
+        background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    }
+    .card-header {
+    background: #533A71;
+    color: white;
+}
+.form-check {
+    position: relative;
+    display: block;
+    float: left;
+    padding-left: 10.25rem;
+}
+.forget_pass {
+    float: right;
+}
+.form-check {
+    position: relative;
+    display: block;
+    float: left;
+    padding-left: 10.25rem;
+}
+.sign-up-link {
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 .25rem .25rem;
+    background: white;
+}
+</style>
 </body>
-</html>
 
+</html>
