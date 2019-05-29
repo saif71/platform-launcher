@@ -84,7 +84,7 @@
     /* */
   }
 
-  .launcher-small i.fa-bars {
+  .launcher-small i.fa-angle-left {
     display: none;
   }
 
@@ -116,6 +116,14 @@ button.btn-active {
     text-align: center;
     width: auto;
 }
+i.fas.fa-angle-left {
+    background: #2b1940;
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+    border-radius: 100%;
+    line-height: 1.8;
+}
 </style>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
   integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -124,13 +132,14 @@ button.btn-active {
 <body>
   <div class="launcher-container">
     <div class="launcher-sidebar" id="launcher-sidebar">
+        <div class="resizer" style="margin: 10px">
+            <i class="fas fa-angle-left"></i>
+            <i class="fas fa-expand"></i>
+          </div>
       <div class="side_bar_logo">
         <img src="img/flex-small.png" alt="Flexponsive Logo" class="side_bar_logo_img">
       </div>
-      <div class="resizer" style="margin-bottom: 25px">
-        <i class="fas fa-bars"></i>
-        <i class="fas fa-expand"></i>
-      </div>
+      
 
       <button type="button" class="btn btn-outline btn-active" data-toggle="iframe-edit">
         <i class="fas fa-edit"></i>
