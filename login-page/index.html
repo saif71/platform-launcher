@@ -53,10 +53,10 @@
             </div>
         </nav> -->
 
-        <main class="py-5">
-            <div class="container">
+        <main class="">
+            <div class="container login_box_container">
                 <div class="row justify-content-center">
-                    <div class="col-md-5">
+                    <div class="col-md-3">
                         <div class="card">
                             
                             <div class="card-header">
@@ -133,7 +133,7 @@
     height: 100%;
     }
     body{
-        background-image: linear-gradient(to top, #6a11cb 0%, #2575fc 100%);
+        background-image: linear-gradient(to top, #5f08bd 40%, #2575fc 167%);
     }
     .card-header {
     background: #533A71;
@@ -172,6 +172,23 @@
     color: white;
     text-decoration: underline;
     
+}
+.login_box_container{
+    display: table-cell;
+    vertical-align: middle;
+}
+main {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.card {
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 5px 5px 5px #0000001a;
 }
 </style>
 </body>
