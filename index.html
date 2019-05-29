@@ -109,6 +109,13 @@ button.btn-active {
     background: #2b1940;
     color: white;
 }
+.logged_user {
+    bottom: 0;
+    left: 5px;
+    position: absolute;
+    text-align: center;
+    width: auto;
+}
 </style>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
   integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -152,10 +159,12 @@ button.btn-active {
         </button>
         <br />
 
-        <button type="button" class="btn btn-outline" data-toggle="iframe-deploy">
+        <button type="button" class="btn btn-outline logged_user" data-toggle="iframe-deploy">
             <i class="fas fa-user"></i>
+            <br>
             <span class="label">Username</span>
           </button>
+        
     </div>
 
 
@@ -165,6 +174,8 @@ button.btn-active {
     <iframe src="about:blank" data-src="./sample3.html" class="content-iframe" id="iframe-db"></iframe>
     <iframe src="about:blank" data-src="./sample2.html" class="content-iframe" id="iframe-deploy"></iframe>
   </div>
+
+  
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="./launcher.js"></script>
